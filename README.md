@@ -40,7 +40,9 @@ In this challenge I have learned to understand better how is the reactivity and 
 
 ## Features
 
-A simple application to search for lodging by country or city
+- A simple application to filter lodging according to the city or the country.
+- The application is fully responsive.
+- Dark and light mode according to the user's device settings
 
 ## How To Use
 
