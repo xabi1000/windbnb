@@ -1,11 +1,9 @@
-@import './css/normalize.css';
+@import "./css/normalize.css";
 
 :root {
-
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-
 }
 
 @media (prefers-color-scheme: light) {
@@ -25,7 +23,6 @@
     --footer-color: hsla(0, 0%, 80%, 0.7);
   }
 }
-
 
 body {
   display: grid;
@@ -68,7 +65,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--light);
 }
-
 
 button {
   cursor: pointer;
