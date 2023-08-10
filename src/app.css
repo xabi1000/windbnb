@@ -1,18 +1,11 @@
 @import './css/normalize.css';
 
 :root {
-  --dark: #213547;
-  --light: #ffffffde;
-  --label-color: hsla(0, 0%, 80%, 0.2);
-  --footer-color: hsla(0, 0%, 80%, 0.7);
-  --aside-bg: #1b7da7;
 
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-  color: var(--light);
-  background-color: var(--dark);
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -24,12 +17,25 @@
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --dark: #213547;
+    --light: #ffffffde;
+    --label-color: hsla(0, 0%, 80%, 0.2);
+    --footer-color: hsla(0, 0%, 80%, 0.7);
+  }
+}
+
+
 body {
-  padding: 1.1em;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: minmax(150px, 5%) minmax(90px, 3%) 1fr minmax(51px, 3%);
   gap: 0.5rem;
+  padding: 1.1em;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
 }
 
 @media (min-width: 768px) {
@@ -79,7 +85,7 @@ input {
 }
 
 input:focus {
-  color: #ffd700;
+  color: #082c79;
   outline: 1px solid #ffd700;
 }
 

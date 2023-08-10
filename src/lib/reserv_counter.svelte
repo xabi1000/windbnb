@@ -72,6 +72,6 @@
   button:focus,
   button:hover {
     outline: 1px solid #ffd700;
-    color: #ffd700;
+    color: #26077c;
   }
 </style>

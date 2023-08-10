@@ -47,7 +47,7 @@
         <li class="overflow">
           <ul>
             {#each filterData() as { country, city }}
-              <li>
+              <li class="housing_options">
                 <span>🏁</span><strong>{city}, {country}</strong>
               </li>
             {/each}
@@ -99,7 +99,7 @@
     align-content: start;
     align-items: start;
     gap: 1.5em;
-    background-color: var(--aside-bg);
+    background-color: var(--dark);
     padding: 2em 1.5em;
     transform: translateY(-100%);
     transition: transform 2s ease-in-out;
@@ -151,7 +151,7 @@
   }
 
   form input:focus {
-    color: #ffd700;
+    color: #26077c;
     outline: 1px solid #ffd700;
   }
 
@@ -187,6 +187,10 @@
 
   .overflow::-webkit-scrollbar-thumb:hover {
     background-color: var(--light);
+  }
+
+  .housing_options {
+    font-size: 2.1em;
   }
 
   /* *******************MEDIA QUERIES******************* */
