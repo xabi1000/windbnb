@@ -190,7 +190,7 @@
   }
 
   .housing_options {
-    font-size: 2.1em;
+    font-size: 1.1em;
   }
 
   /* *******************MEDIA QUERIES******************* */
