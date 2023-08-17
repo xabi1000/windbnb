@@ -1,17 +1,17 @@
 <script>
-  import { menuStore } from "../strores/toggle_menu.js";
-  import ReservCounter from "./reserv_counter.svelte";
+  import { menuStore } from '../strores/toggle_menu.js';
+  import ReservCounter from './reserv_counter.svelte';
   export let location, guests, filterData;
 
   let focusedTEXT = false;
   let focusedNUMBER = false;
 
   const handleFocusInput = (e) => {
-    e.target.closest("#inputText")
+    e.target.closest('#inputText')
       ? (focusedTEXT = true)
       : (focusedTEXT = false);
 
-    e.target.closest("#inputNumber")
+    e.target.closest('#inputNumber')
       ? (focusedNUMBER = true)
       : (focusedNUMBER = false);
   };
@@ -99,7 +99,7 @@
     align-content: start;
     align-items: start;
     gap: 1.5em;
-    background-color: var(--dark);
+    background-color: #213547f2;
     padding: 2em 1.5em;
     transform: translateY(-100%);
     transition: transform 2s ease-in-out;
@@ -155,8 +155,8 @@
     outline: 1px solid #ffd700;
   }
 
-  form input[type="number"],
-  form input[type="text"] {
+  form input[type='number'],
+  form input[type='text'] {
     width: 100%;
   }
 
