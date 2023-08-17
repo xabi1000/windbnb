@@ -1,16 +1,16 @@
 <script>
-  import { onMount } from "svelte";
-  import data from "./data/data.json";
+  import { onMount } from 'svelte';
+  import data from './data/data.json';
   // COMPONENETS
-  import Header from "./lib/header.svelte";
-  import Footer from "./lib/footer.svelte";
-  import Nav from "./lib/nav.svelte";
-  import Card from "./lib/card.svelte";
-  import CountryStays from "./lib/country-stays.svelte";
+  import Header from './lib/header.svelte';
+  import Footer from './lib/footer.svelte';
+  import Nav from './lib/nav.svelte';
+  import Card from './lib/card.svelte';
+  import CountryStays from './lib/country-stays.svelte';
 
   // VARIABLES
 
-  let location = "",
+  let location = '',
     guests = 0;
   $: console.log(location);
 
@@ -67,7 +67,7 @@
 
   .error {
     color: red;
-    font-size: 3em;
+    font-size: 1.3rem;
     text-align: center;
     position: absolute;
     inset: 30% 2rem auto 2rem;
@@ -78,6 +78,10 @@
   @media (min-width: 768px) {
     .cards_container {
       justify-content: space-between;
+    }
+
+    .error {
+      font-size: 2.3rem;
     }
   }
 </style>
