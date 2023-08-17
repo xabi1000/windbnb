@@ -1,5 +1,6 @@
 <script>
-  export let location, available;
+  export let location = 'Finland',
+    available;
 </script>
 
 <div class="stays_container">
