@@ -1,4 +1,4 @@
-@import "./css/normalize.css";
+@import './css/normalize.css';
 
 :root {
   line-height: 1.5;
@@ -87,4 +87,15 @@ input:focus {
 
 *::placeholder {
   color: var(--light);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
 }
