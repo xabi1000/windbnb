@@ -10,7 +10,7 @@
 
   // VARIABLES
 
-  let location = '',
+  let location = 'Finland',
     guests = 0;
   $: console.log(location);
 
